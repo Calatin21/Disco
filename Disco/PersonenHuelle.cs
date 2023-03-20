@@ -5,10 +5,10 @@
             this.p = p;
         }
         public void Tanzen() {
-            Console.WriteLine($"{p.GetName()} tanzt");
+            Console.WriteLine($"{p.GetHashCode()} tanzt");
         }
         public void Laecheln() {
-            Console.WriteLine($"{p.GetName()} laechelt");
+            Console.WriteLine($"{p.GetHashCode()} laechelt");
         }
         public Person GetPerson() {
             return p;

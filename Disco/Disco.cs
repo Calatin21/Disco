@@ -4,10 +4,11 @@
         public void NimmAuf(Person p) {
             PersonenHuelle ph1 = new PersonenHuelle(p);
             ph.Add(ph1);
-            Console.WriteLine($"{p.GetName()} hat Disco betreten");
+            Console.WriteLine($"{p.GetHashCode()} hat Disco betreten");
         }
         public Person GehRaus() {
-            Person p = ph.First().GetPerson();
+            Person p = null;
+            p = ph.First().GetPerson();
             ph.Remove(ph.First());
             return p;
         }
