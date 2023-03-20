@@ -7,7 +7,6 @@
             Console.WriteLine($"{p.GetName()} hat Disco betreten");
         }
         public Person GehRaus() {
-            Console.WriteLine($"{ph.First().GetPerson().GetName()} hat Disco verlassen");
             Person p = ph.First().GetPerson();
             ph.Remove(ph.First());
             return p;

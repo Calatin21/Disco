@@ -10,13 +10,13 @@
             disco.NimmAuf(p3);
             disco.GetFirstItem().Tanzen();
             disco.GetFirstItem().Laecheln();
-            disco.GehRaus();
+            Console.WriteLine(disco.GehRaus().GetName() + " hat Disco verlassen.");
             disco.GetFirstItem().Tanzen();
             disco.GetFirstItem().Laecheln();
-            disco.GehRaus();
+            Console.WriteLine(disco.GehRaus().GetName() + " hat Disco verlassen.");
             disco.GetFirstItem().Tanzen();
             disco.GetFirstItem().Laecheln();
-            disco.GehRaus();
+            Console.WriteLine(disco.GehRaus().GetName()+" hat Disco verlassen.");
         }
     }
 }
